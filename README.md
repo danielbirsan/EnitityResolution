@@ -84,6 +84,8 @@ The final output is saved to a **Parquet file** and provides a **deduplicated** 
 3. **Advanced Matching**  
    - Incorporate advanced **token-based** or **embedding-based** name matching.  
    - Explore **locality-sensitive hashing (LSH)** if you have extremely large sets.
-
+4. **Enriching data**  
+   - Use LLM to extract data from the descriptions
+   - Value more the activity columns and the location columns
 
 
