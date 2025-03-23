@@ -62,11 +62,37 @@ The final output is saved to a **Parquet file** and provides a **deduplicated** 
    python -m spacy download en_core_web_sm
    ```
 
+## Postal Code Lookup
 
+To enrich missing `main_city`, `main_country`, and `main_country_code` values without using online geocoding services, we use a **pre-downloaded postal code dataset**.
+
+ Download the dataset from this Google Drive folder:
+
+ [📁 allCountriesCSV (Google Drive)](https://drive.google.com/drive/folders/1mN47iWtoVVqBUNuUiFeq7UQ65yAv-fps)
+
+It includes columns like:
+
+- `POSTAL_CODE`
+- `CITY`
+- `COUNTRY` (ISO Alpha-2)
+- `LATITUDE`, `LONGITUDE`, etc.
+
+```python
+postal_df = pd.read_csv("allCountriesCSV.csv", dtype=str)
+postcode_to_city = dict(zip(postal_df["POSTAL_CODE"], postal_df["CITY"]))
+postcode_to_country = dict(zip(postal_df["POSTAL_CODE"], postal_df["COUNTRY"]))
+```
+
+Used this mapping offline to:
+- Fill in missing cities/countries
+- Avoid any network/API calls
+- Enhance both preprocessing and similarity scoring
+
+---
 
 ## Results
 
-- From **33,000+** initial rows, the pipeline merges duplicates into a much smaller set of **unique “golden records.”** (24445 connected components (clusters) )
+- From **33,000+** initial rows, the pipeline merges duplicates into a much smaller set of **unique “golden records.”** (19779 connected components (clusters) )
 - The final dataset is stored in **`final_data.parquet`**.  
 - You can print or visualize any multi-record cluster before merging to verify correctness.
 
