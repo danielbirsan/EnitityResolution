@@ -66,7 +66,7 @@ The final output is saved to a **Parquet file** and provides a **deduplicated** 
 
 ## Results
 
-- From **33,000+** initial rows, the pipeline merges duplicates into a much smaller set of **unique “golden records.”**  
+- From **33,000+** initial rows, the pipeline merges duplicates into a much smaller set of **unique “golden records.”** (24445 connected components (clusters) )
 - The final dataset is stored in **`final_data.parquet`**.  
 - You can print or visualize any multi-record cluster before merging to verify correctness.
 
