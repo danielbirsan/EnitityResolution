@@ -1,4 +1,4 @@
-#  Entity Deduplication for Company Records — Veridion Internship Challenge
+#  Entity Resolution for Company Records — Veridion Internship Challenge
 
 The project was completed as part of the **Veridion Data Engineer Internship challenge**, and showcases a pipeline designed to be:
 
@@ -13,7 +13,7 @@ The project was completed as part of the **Veridion Data Engineer Internship cha
 
 ## Overview
 
-This repository demonstrates a comprehensive **Entity Deduplication** pipeline for **company records**. Starting with a **noisy dataset** of **33,000+ rows**, the project aims to:
+This repository demonstrates a comprehensive **Entity Resolution** pipeline for **company records**. Starting with a **noisy dataset** of **33,000+ rows**, the project aims to:
 
 1. **Clean & normalize** raw company data.  
 2. **Compute similarities** among potentially matching records via a **points-based** or **weighted** approach.  
