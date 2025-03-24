@@ -21,6 +21,11 @@ This repository demonstrates a comprehensive **Entity Resolution** pipeline for 
 The final output is saved to a **Parquet file** and provides a **deduplicated** set of unique companies.
 
 ---
+## 📄 Documentation
+
+Full documentation is also available here:  
+[https://2ly.link/25ovw](https://2ly.link/25ovw)
+
 
 ## Key Features
 
