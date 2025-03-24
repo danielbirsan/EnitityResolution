@@ -128,7 +128,7 @@ Used this mapping offline to:
 ## Results
 
 - From **33,000+** initial rows, the pipeline merges duplicates into a much smaller set of **unique “golden records.”** (19779 connected components (clusters) )
-- BONUS: I tried to deduplicate the dtaa and the final dataset is stored in **`final_data.parquet`**.  
+- BONUS: I tried to deduplicate the data and the final dataset is stored in **`final_data.parquet`**.  
 - You can print or visualize any multi-record cluster before merging to verify correctness.
 
 ---
