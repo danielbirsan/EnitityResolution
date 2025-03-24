@@ -1,6 +1,5 @@
 #  Entity Resolution for Company Records — Veridion Internship Challenge
 
-The project was completed as part of the **Veridion Data Engineer Internship challenge**, and showcases a pipeline designed to be:
 
 > **Table of Contents**  
 > - [Overview](#overview)  
