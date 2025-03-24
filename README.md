@@ -46,6 +46,41 @@ The final output is saved to a **Parquet file** and provides a **deduplicated** 
   - Writes to **`final_data.parquet`** or a user-specified name, drastically reducing the original row count.
 
 
+
+## What Makes a Company... a Company?
+
+Is a McDonald's in Galați different from a McDonald's in Bucharest?  
+What if a company splits into two entities, each responsible for different market segments or stages of the production pipeline — are those still the same company or two distinct ones?  
+And what happens if a company changes its name, opens a new factory, and hires different employees — is it still the same company?
+
+*BONUS*
+These questions touch on the philosophical dilemma of identity, reminiscent of the **Ship of Theseus** paradox:  
+> *If every component of a company is replaced over time, is it still the same entity?*
+
+
+## ⚖️ Assumptions in This Project
+
+In this solution, I aimed for a **balanced and practical approach**:
+
+- If a company’s city appears in the list of known locations for another record, they may be treated as the same entity — especially if other fields (e.g., name, domain) align.
+- Different locations or departments of a larger company can still be merged if the similarities are strong.
+- However, if the differences across key fields are significant (e.g., industry, name, location), they are likely treated as distinct companies.
+
+---
+
+##  Flexibility of the System
+
+The scoring and matching system is **fully customizable**:
+
+- Tune how much weight is given to name, domain, location, activity, etc.
+- Adjust thresholds to be stricter or more lenient
+- Disable location comparison entirely if needed
+
+This makes the solution highly **adaptable** — suitable for merging franchise records, cleaning up business databases, or defining company identity in different contexts.
+
+
+
+
 ## Installation & Requirements
 
 1. **Python 3+**  
