@@ -103,7 +103,7 @@ This makes the solution highly **adaptable** — suitable for merging franchise 
 
 ## Postal Code Lookup
 
-To enrich missing `main_city`, `main_country`, and `main_country_code` values without using online geocoding services, we use a **pre-downloaded postal code dataset**.
+To enrich missing `main_city`, `main_country`, and `main_country_code` values without using online geocoding services, I used a **pre-downloaded postal code dataset**.
 
  Download the dataset from this Google Drive folder:
 
