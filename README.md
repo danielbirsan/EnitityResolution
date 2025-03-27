@@ -1,4 +1,4 @@
-#  Entity Resolution for Company Records — Veridion Internship Challenge
+#  Entity Resolution for Company Records 
 
 
 > **Table of Contents**  
@@ -152,5 +152,3 @@ Used this mapping offline to:
 4. **Enriching data**  
    - Use LLM to extract data from the descriptions
    - Value more the activity columns and the location columns
-
-
